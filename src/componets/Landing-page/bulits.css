@@ -1,0 +1,34 @@
+.bulits{
+    width: 100%;
+    color:white;
+    position: absolute;
+    bottom: -180px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.bulits ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bulits ul li{
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    margin-left:15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border:1px solid white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bulits ul li.active{
+    background-color:rebeccapurple
+}
+@media (max-width:992px) {
+    .bulits{
+        left:45%;
+    }
+}

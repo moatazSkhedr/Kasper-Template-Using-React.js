@@ -1,0 +1,65 @@
+.footer{
+    background-image: url("../../../public/images/subscribe.jpg");
+    padding:150px;
+    position: relative;
+}
+.footer::before{
+    content: "";
+    position: absolute;
+    left:0;
+    right: 0;
+    top:0;
+    bottom:0;
+    background-color: rgb(0 0 0 / 50%);
+
+}
+.footer .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer .container .logo{
+    position: relative;
+    top:-60px;
+}
+.footer .container .logo img{
+    width: 130px;
+}
+.footer .container h3{
+    text-align: center;
+    width:250px;
+    color:white;
+    font-weight: normal;
+    position: relative;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+.footer .container .social{
+    display: flex;
+    color:white;
+}
+.footer .container .social svg{
+    margin-right:30px;
+    margin-top:20px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.footer .container .kasper{
+    color:white;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+.footer .container .kasper span{
+    color:#19c8fa;
+}
+
+/* .footer .container h3::before{
+    content:"";
+    position: absolute;
+    width:100px;
+    height: 1px;
+    background-color: antiquewhite;
+    bottom:-10px;
+} */

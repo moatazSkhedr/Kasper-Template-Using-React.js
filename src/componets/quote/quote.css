@@ -1,0 +1,38 @@
+.quote{
+    padding-top:60px;
+    padding-bottom: 60px;
+    background-image: url('../../../public/images/quote.jpg');
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color:white;
+}
+.quote::before{
+    content: "";
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 0;
+    top:0;
+    background-color: rgb(0 0 0 /70%);
+}
+.quote .containe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:20px
+}
+.quote h3{
+    margin-top:50px;
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: block;
+}
+.quote p{
+    position: relative;
+    font-size: 20px;
+}

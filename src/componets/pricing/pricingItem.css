@@ -1,0 +1,74 @@
+.pricing-box{
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+    
+}
+.pricing-box .head{
+    padding-top:50px;
+    padding-bottom:50px;
+    border-top:1px solid #19c8fa;
+    border-bottom:1px solid #19c8fa;
+
+}
+
+.pricing-box .head h4{
+    font-size:25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.pricing-box .head span{
+    font-size: 60px;
+    font-weight: bold;
+}
+.pricing-box .head span::before{
+    content: "$";
+    position: relative;
+    font-size: 25px;
+    font-family: normal;
+    top:-40px;
+    color:black;
+    margin-right: 15px;
+}
+.pricing-box .head span::after{
+    content: "/Mo";
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left:15px;
+
+}
+.pricing-box ul li{
+    padding:20px;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+}
+.pricing-box ul{
+    border-bottom: 1px solid #19c8fa;
+}
+.pricing-box ul li:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    width:150px;
+    height: 1px;
+    background-color:#19c8fa;
+    bottom: 0;
+    left:50%;
+    transform:translateX(-50%);
+}
+.pricing-box ul{
+    list-style: none;
+}
+.pricing-box .foot{
+}
+.pricing-box .foot a{
+    display: block;
+    padding:20px 20px;
+    text-decoration: none;
+    font-size:18px;
+    width: fit-content;
+    font-family: 'Times New Roman', Times, serif;
+    margin:30px auto;
+    border: 1px solid #19c8fa;
+}

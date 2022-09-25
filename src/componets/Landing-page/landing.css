@@ -1,0 +1,146 @@
+.landing{
+    padding-top:50px;
+    background-image:url("../../../public/images/landing.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.landing .overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(0 0 0 / 50%) ;   
+}
+.landing .container{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.landing .logo img{
+    width: 150px;
+}
+@media (min-width:992px){
+    .list{
+        display:none;
+        
+    }
+}
+.list, .hide{
+    margin-right: 40px;
+    color:white;
+    cursor:pointer;
+}
+@media (min-width:993px){
+    .landing .container .links,
+    .landing .container .hide
+    {
+        display: flex;
+        justify-content: flex-end;
+        flex:1;
+        padding-right:40px;
+    }
+    .landing .container .links li a:hover::before,
+    .landing .container .hide li a:hover::before{
+
+        /* border-bottom: 1px solid #19c8fa; */
+        content:"";
+        text-align: center;
+        position: absolute;
+        bottom:20px;
+        top:80px;
+        height: 0px;
+        width:80px;
+        z-index: 2;
+        border-bottom: 2px solid #19c8fa;
+    
+    }
+    
+    
+}
+.landing .container .links li,
+.landing .container .hide li
+
+{
+    list-style: none;
+    padding-right: 25px;
+}
+.landing .container .links li a,
+    .landing .container .hide li a{
+
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    font-weight: normal;
+} 
+.landing .container .links li a.active,
+.landing .container .hide li a.active{
+
+    color:#19c8fa;
+}
+.landing .search{
+    width:50px;
+    height:50px;
+    margin-left:10px;
+    padding:5px;
+    position: relative;
+}
+.search svg{
+    color:white;
+}
+.landing .search::before{
+    content: "";
+    position: absolute;
+    width:1px;
+    height: 50px;
+    bottom:0;
+    top:2;
+    right:70px;
+    background-color:white;
+}
+.landing .container::before{
+    content:"";
+    position: absolute;
+    bottom:20px;
+    top:80px;
+    height: 1px;
+    width:calc(100% - 30px);
+    background-color:white;
+    z-index: 1;
+}
+@media (max-width:991px) { 
+    .landing .container .links{
+        display: flex;
+        flex-direction:column;
+        position: absolute;
+        top:90px;
+        background-color: rgb(0 0 0 / 20%);
+        width: 100%;
+        
+    }
+    
+
+    .landing .container .links li{
+        padding:20px;
+        border:none;
+    }
+    .landing .container .links li a{
+        display: block;
+        transition: 0.5s;
+    }
+    .landing .container .links li:hover{
+        padding-left:30px;
+        transition: 0.3s;
+    }
+    .landing .container .logo{
+        flex:1;
+    }
+    .hide{
+        display: none;
+    }
+}
+.bulit-item{
+    position: relative;
+}

@@ -1,0 +1,93 @@
+.contact{
+    padding-bottom: 60px;
+}
+.contact .container{
+    display: flex;
+}
+.contact .container form{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+
+}
+.contact .container .right-side{
+    display: flex;
+    flex-direction: column;
+}
+.contact .container form input {
+    margin-bottom: 50px;
+}
+.contact .container form input[type="text"],
+.contact .container form input[type="emial"]{
+    padding:20px;
+    width:850px;
+    height: 60px;
+}
+.contact .container form input[type="text"]:focus,
+.contact .container form input[type="emial"]:focus{
+    outline:none;
+}
+.contact .container form textarea{
+    width:850px;
+    height: 200px;
+    padding: 20px;
+}
+.contact .container .text-box{
+    margin-bottom: 120px;
+}
+.contact .container .text-box .number{
+    display: flex;
+    flex-direction: column;
+}
+.contact .container .text-box h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-bottom: 8px;
+}
+.contact .container .text-box span{
+    color:#777;
+    padding-bottom: 6px ;
+}
+.contact .sen-mesg{
+    text-align: right;
+    margin-top:30px;
+    margin-right:50px;
+    background-color:#19c8fa;
+    display: block;
+    width: fit-content;
+    margin-left:auto;
+    padding:20px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color:white;
+}
+@media (max-width:992px) {
+    .contact .container{
+        flex-direction: column;
+    }
+    .contact .container form input[type="text"],
+.contact .container form input[type="emial"]{
+    padding:20px;
+    width:100%;
+    height: 60px;
+}
+.contact .container form textarea{
+    width:100%;
+    height: 200px;
+    padding: 20px;
+}
+.right-side{
+    align-items: center;
+    margin-top:70px;
+}
+.contact {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.contact .sen-mesg{
+    text-align:center;
+    margin-right: 85px;
+}
+}
+
+

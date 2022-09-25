@@ -1,0 +1,50 @@
+.ourskils{
+    display: flex;
+  flex-direction: column;
+    position: relative;
+    flex-basis: 45%;
+    margin-bottom:150px;
+}
+.ourskils h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 40px;
+    color:#777;
+}
+.ourskils p{
+    text-align: center;
+    line-height: 2;
+    font-weight: normal;
+    letter-spacing: 1.1px;
+    color:#777;
+}
+.ourskils .prog-holder{
+    margin-top: 50px;
+    margin-bottom: 2px;
+}
+.ourskils .prog-holder h4{
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.ourskils .prog-holder .prog {
+    background-color: #dedadc;
+    width:100%;
+    height: 31px;
+    position: relative  ;
+}
+.ourskils .prog-holder .prog::before{
+    content:"";
+    position: absolute ;
+    top:0;
+    bottom:0;
+    left:0;
+    width:90%;
+    background-color: #19C8FA;
+}
+@media (max-width: 992px){
+    .ourskils{
+        flex-basis: 100%;
+    }
+}

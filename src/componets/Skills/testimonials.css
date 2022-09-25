@@ -1,0 +1,81 @@
+.testimonials{
+    display: flex;
+  flex-direction: column;
+    position: relative;
+    flex-basis: 45%;
+    margin-bottom:150px;
+}
+.testimonials h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 40px;
+    color:#777;
+}
+.testimonials > p{
+    text-align: center;
+    line-height: 2;
+    font-weight: normal;
+    letter-spacing: 1.1px;
+    color:#777;
+}
+.testimonials .box{
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.testimonials .box{
+    border-bottom: 1px solid #aaa;
+}
+.testimonials .box img{
+    border-radius: 50%;
+    margin-right:20px;
+    width: 150px;
+}
+.testimonials .box p{
+    font-weight: normal;
+    line-height: 2;
+}
+.testimonials .box .name{
+   text-align: right;
+   color:#777
+}
+/* .box::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    width: 70%;
+    height: 1px;
+    background-color: #777;
+    right:10px;
+} */
+.testimonials .bulits {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 110px;
+
+}
+.testimonials .bulits li{
+    width: 14px;
+    height: 14px;
+    border : 1px solid #aaa;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.testimonials .bulits li.active{
+    background-color: #19c8fa;
+}
+@media (max-width: 992px){
+    .testimonials{
+        flex-basis: 100%;
+    }
+    .testimonials .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonials .box p{
+        text-align: center;
+    }   
+}

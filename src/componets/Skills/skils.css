@@ -1,0 +1,9 @@
+.skils{
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+.skils .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 

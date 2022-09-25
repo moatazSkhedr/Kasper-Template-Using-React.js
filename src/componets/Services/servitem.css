@@ -1,0 +1,21 @@
+.servItems{
+    display: flex;
+    flex-direction: column;
+    margin:30px 15px;
+    justify-content: center;
+    align-items: center;
+}
+.servItems svg{
+    margin-bottom: 15px;
+}
+.servItems h2{
+    padding:20px;
+    color: #19c8fa;
+    font-size:normal
+}
+.servItems p{
+    line-height: 2;
+    font-size:17px;
+    text-align: center;
+    color:#777;
+}
